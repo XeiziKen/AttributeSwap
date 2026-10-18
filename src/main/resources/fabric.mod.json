@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "attributeswap",
+	"version": "${version}",
+	"name": "Auto AttributeSwap & StunSlam",
+	"description": "Client-side helper: left-click with a trigger item to automatically swap hotbar slots for attribute swap or axe stun + slam combos.",
+	"authors": [
+		"Zeiro"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.zeiro.attributeswap.AttributeSwapClient"
+		]
+	},
+	"mixins": [
+		"attributeswap.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*"
+	}
+}
